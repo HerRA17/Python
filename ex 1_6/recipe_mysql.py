@@ -53,7 +53,7 @@ def main_menu(conn, cursor):
     elif choice == "5":
       view_all_recipes(conn, cursor)
 
-#create_recipe() function
+# create recipe function
 # Function below allows the user to input a new recipe data (name, cooking time, ingredients) and also automatically determines a difficulty level based on cooking time and number of ingredients
 def create_recipe(conn, cursor):
   recipe_ingredients = []
