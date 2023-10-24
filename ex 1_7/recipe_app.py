@@ -140,7 +140,7 @@ def view_all_recipes():
        print("-"*10)
        for recipe in all_recipes:
          print(recipe)
-    
+
 # search recipe(s) by ingredients
 def search_by_ingredients():
 # Check if your table has any entries. If there aren’t any entries, notify the user, and exit the function.
@@ -206,6 +206,7 @@ def search_by_ingredients():
        for recipe in searched_recipes:
           print(recipe)
 
+
 # edit recipe
 def edit_recipe():
     if session.query(Recipe).count() == 0:
@@ -219,8 +220,10 @@ def edit_recipe():
        for recipe in results:
         print("\nId: ", recipe[0])
         print("Name: ", recipe[1])
+       
 # Asks the user to input the ID of the recipe he wants to edit
-        recipe_id_for_edit = int((input("\nEnter the ID of the recipe you want to edit: ")))
+        recipe_id_for_edit = int((input("\nEnter the ID of the recipe you want to edit (or '0' to exit): ")))
+        
         print(session.query(Recipe).with_entities(Recipe.id).all())
 
         recipe_id_tup_list = session.query(Recipe).with_entities(Recipe.id).all()
@@ -231,8 +234,12 @@ def edit_recipe():
            recipes_id_list.append(recipe_tup[0])
 
         print(recipes_id_list)
-        if recipe_id_for_edit not in recipes_id_list:
+        
+        if recipe_id_for_edit == 0:
+           return # exit function
+        elif recipe_id_for_edit not in recipes_id_list:
            print("Not in the ID list, please try again later.")
+           return
         else:
            print("Ok you can continue")
 # Look for the object associated with the ID and retrieve it
@@ -258,6 +265,9 @@ def edit_recipe():
               print("You want to update the ingredients of the recipe")
               session.query(Recipe).filter(Recipe.id == recipe_id_for_edit).update({Recipe.ingredients: updated_value})
               session.commit()
+           elif column_for_update == 0:
+              print("Exiting the edit recipe function.")
+              return
            else:
               print("Wrong input, please try again.")
 # Recalculate the difficulty
