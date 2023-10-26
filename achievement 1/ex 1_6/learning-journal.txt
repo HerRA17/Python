@@ -1,0 +1,19 @@
+
+
+2.	List 3 data types that can be used in MySQL and describe them briefly:
+
+
+Data type	Definition
+VARCHAR	String of variable length, with n representing the maximum number of characters
+INT	Standard integers
+FLOAT	Floating-point decimal numbers
+
+3.	 In what situations would SQLite be a better choice than MySQL?
+Sqlite fits better in a project when the database for applications that need portability and don’t require future expansion, when an application needs to read and write files to disk directly, and for testing since has an in-memory mode which can be used to run tests quickly without the overhead of actual database operations
+
+4.	Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+Python can be used for web-development, and a  wide range of applications. Through virtual environments, projects can easily be maintained and not break down based on the version used, it is a object orient language.
+Javascript is a great language for web/app development (Front & Back end), specially for mobile apps. Is a scripting language, most web browser can run it, client-side is the most common use for it.   
+
+5.	Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+Some of the limitations of python are its speed due to being high-level, requiring an interpreter to read line by line, mobile development, memory consumption, run time errors because it is dynamically typed.
