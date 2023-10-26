@@ -1,0 +1,12 @@
+1.	In your own words, what is object-oriented programming? What are the benefits of OOP?
+OOP is an approach to code to avoid repetition in your code, since for instance with the use of a class object you reused the created class to pass the attributes to other future objects. Th benefits are modularity for easier troubleshooting, reuse of code through inheritance, flexibility through polymorphism, and that it is an effective problem-solving approach.
+
+2.	What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+A real scenario could be representing the animal kingdom where we could create a class object of an animal and from there specify: For example an object for mammals and from that class you just adjust the object based on the group you want to portray.
+
+3.	In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine. 
+
+Method	Description:
+Inheritance:	The passing of the properties of a  parent class to a subclass
+Polymorphism:	is where a given data attribute or method has the same name across different classes or data types, but performs different operations depending on where it was defined.
+Operator Overloading:	The process of defining a operator in a custom class, where a function with a name that Python already reserves for your operator, and surrounding it with double underscores
