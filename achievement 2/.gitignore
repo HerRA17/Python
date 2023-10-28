@@ -84,3 +84,8 @@ ipython_config.py
 venv/
 # environment folders
 \env
+pyvenv.cfg
+*.exe
+*.bat
+*.ps1
+\activate
