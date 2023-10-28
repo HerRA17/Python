@@ -1,0 +1,11 @@
+If I needed to develop a Web app with multiple users:
+Django would be a great fit, apps with heavy traffic, large user base or high content volume are a good fit for the framework.
+If I needed fast deployment and the ability to make changes as required:
+Django indeed would be a great fit for fast deployment since it handles network transmissions and content delivery
+at high speed, as well it facilitates changes happening to the app.
+If I needed to build a very basic app, which does not require a database access or file operation:
+Django would not be a suitable use for this kind of app since it is more server intensive.
+If I wanted to build an app from scratch and wanted a lot of control over how it works:
+Django might not be most suitable, since you will not have total liberty with the project.
+If I started working on a big project and had concerns about being stuck and asking for support:
+Django would be a right fit since it is open source, it has a large community of contributors and facilitates scalability.
