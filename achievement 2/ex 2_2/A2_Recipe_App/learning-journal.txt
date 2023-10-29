@@ -1,0 +1,8 @@
+1.	Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference. 
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+So the overall App (is the project) lets say Imdb, and within the project you have different apps that have different functionalities (login, navigation, etc) 
+2.	In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+I first need to set a virtual environment for the project, afterwards it needs to be activated. Once that is done you install Django. After the installation, you need to start a project with the respective command tools to create a general structure, then I would run migration to create a database for the app. Once that is done, I would create a superuser for admin purposes. Additionally, depending on what functionality the app requires I would create apps. Lastly, run the server.
+
+3.	Do some research about the Django admin site and write down how you’d use it during your web application development.
+The Django admin panel is an interface where users can create, read, update, delete on a model directly. It is an interface where the user can manage contents of the site using CRUD operations, which saves a lot of development time.
