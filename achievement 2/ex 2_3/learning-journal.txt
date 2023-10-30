@@ -1,0 +1,8 @@
+1.	Do some research on Django models. In your own words, write down how Django models work and what their benefits are.
+Django models is similar to the SQL that developers use Django to create tables and their attributes. Django models simplify the task of sending SQL queries to perform CRUD operations and similar operations on the databases on the Django’s admin panel.
+To use models, you should have a project and an app started within, afterwards you can add models.py file of the app and register it to the admin.py file easily modify the database using the admin UI. Then you should use these two commands: makemigrations and migrate to update changes to the database.
+The model is defined as a class with database fields specified as class attributes(ex: CharField), and each field have field options which arguments used to add constrains or characteristics to the corresponding field.  
+
+
+2.	In your own words, explain why it is crucial to write test cases from the beginning of a project. You can take an example project to explain your answer.
+It is recommended to write automated tests starting early in a project and then write as much code needed to pass the test avoiding sudden bugs or the app breaking, in which manner you avoid patterns that lead to errors and adopting best practices.
