@@ -125,7 +125,6 @@ def search_recipe(conn, cursor):
   results = cursor.fetchall()
 
   # Note: possible upgrade, in case there is no recipe in the Recipes table, send a message (use try / except / else)
-  # print("Results for search ingredients: ", results)
 
   # Iterates through the results list and for each recipe ingredients tuple
   for recipe_ingredients_list in results:

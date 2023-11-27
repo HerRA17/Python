@@ -38,6 +38,7 @@ and difficulty of the recipe
 * **virtualenv**==20.24.5
 * **wcwidth**==0.2.8
 ## Initial Setup
+### Make sure you already satisfy the prerequisites!
 1. Clone the Repository:
 First, clone the project repository from GitHub to your local machine. Use the following command:
 ```
@@ -67,4 +68,5 @@ pip install -r requirements.txt
 ```
 5. Set Up the Database (MySQL):
 Install MySQL: [link to download MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
-And follow the instructions
+And follow the instructions.
+Through SQLAlchemy module you will establish a connection with MySQL database in the format mysql://username:password@host/database specifies the database type (MySQL), username, password, host, and database name.
